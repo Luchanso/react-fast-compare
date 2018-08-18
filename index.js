@@ -98,10 +98,11 @@ function shouldComponentUpdate(nextProps, nextState, nextContext) {
   );
 }
 
+module.exports = exportedEqual;
+
 module.exports.performance = function performance() {
   return function(target) {
     target.prototype.shouldComponentUpdate = shouldComponentUpdate;
+    return target;
   };
 };
-
-module.exports = exportedEqual;
