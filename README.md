@@ -35,7 +35,7 @@ $ npm install @luchanso/react-fast-compare
 ## Usage
 
 ```jsx
-const isEqual = require("react-fast-compare");
+const isEqual = require("@luchanso/react-fast-compare");
 
 // general usage
 console.log(isEqual({ foo: "bar" }, { foo: "bar" })); // true
@@ -54,7 +54,7 @@ class ExpensiveRenderer extends React.Component {
 Or like [Hight ordered component](https://reactjs.org/docs/higher-order-components.html)
 
 ```jsx
-const performance = require("react-fast-compare").performance;
+const performance = require("@luchanso/react-fast-compare").performance;
 
 class ExpensiveRenderer extends React.Component {
   render() {
