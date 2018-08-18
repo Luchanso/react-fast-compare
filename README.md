@@ -18,19 +18,19 @@ extra handling for React.
 ## Install
 
 ```sh
-$ yarn add react-fast-compare
+$ yarn add @luchanso/react-fast-compare
 # or
-$ npm install react-fast-compare
+$ npm install @luchanso/react-fast-compare
 ```
 
 ## Highlights
 
-* ES5 compatible; works in node.js (0.10+) and browsers (IE9+)
-* deeply compares any value (besides objects with circular references)
-* handles React-specific circular references, like elements
-* checks equality Date and RegExp objects
-* should be just as fast as [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) for general use, and faster for React use
-* small: under 600 bytes minified+gzipped
+- ES5 compatible; works in node.js (0.10+) and browsers (IE9+)
+- deeply compares any value (besides objects with circular references)
+- handles React-specific circular references, like elements
+- checks equality Date and RegExp objects
+- should be just as fast as [fast-deep-equal](https://github.com/epoberezkin/fast-deep-equal) for general use, and faster for React use
+- small: under 600 bytes minified+gzipped
 
 ## Usage
 
@@ -49,6 +49,20 @@ class ExpensiveRenderer extends React.Component {
     // ...
   }
 }
+```
+
+Or like [Hight ordered component](https://reactjs.org/docs/higher-order-components.html)
+
+```jsx
+const performance = require("react-fast-compare").performance;
+
+class ExpensiveRenderer extends React.Component {
+  render() {
+    // ...
+  }
+}
+
+export default performance()(ExpensiveRenderer);
 ```
 
 ## Do I Need `shouldComponentUpdate`?
@@ -118,7 +132,7 @@ $ yarn run benchmark
 
 ## fast-deep-equal Versioning
 
-react-fast-compare@2.0.0 tracks fast-deep-equal@2.0.1
+react-fast-compare@3.0.0 tracks fast-deep-equal@2.0.1
 
 ## License
 

@@ -1,6 +1,6 @@
 {
-  "name": "react-fast-compare",
-  "version": "2.0.1",
+  "name": "@luchanso/react-fast-compare",
+  "version": "3.0.0",
   "description": "Fastest deep equal comparison for React. Perfect for shouldComponentUpdate. Also really fast general-purpose deep comparison",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FormidableLabs/react-fast-compare.git"
+    "url": "git+https://github.com/luchanso/react-fast-compare.git"
   },
   "keywords": [
     "fast",
@@ -30,9 +30,9 @@
   "author": "Chris Bolin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FormidableLabs/react-fast-compare/issues"
+    "url": "https://github.com/luchanso/react-fast-compare/issues"
   },
-  "homepage": "https://github.com/FormidableLabs/react-fast-compare",
+  "homepage": "https://github.com/luchanso/react-fast-compare",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
